@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500&display=swap');
+body{
+	font-family: 'Prompt', sans-serif;
+}
+#footer img{
+	width: 4em;
+}
+
+#content__img img{
+	width: 20em;
+	padding: 2em;
+}
