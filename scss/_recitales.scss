@@ -1,0 +1,45 @@
+.gridbox{
+	border-radius: 0.25px;
+	border: solid 1px rgba(0, 0, 0, 0.125);
+	&__title h3{
+		border-bottom: solid black 0.5px;
+	}
+	&__body--title h5{
+		padding-bottom: 10px;
+		border-bottom: solid black 0.25px;
+	}
+	@media screen and (min-width: 992px){
+		display: grid;
+		grid-template-areas: 
+		"title title title"
+		"img img body"
+		;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 7fr;
+
+		&__title{
+			grid-area: title;
+			position: relative;
+		}
+		&__img{
+			grid-area: img;
+			position: relative;
+		}
+		&__body{
+			grid-area: body;
+
+			position: relative;
+			&--title{
+				position: relative;
+			}
+			&--text{
+				position: relative;
+				
+			}
+			&__btn{
+			position: relative;
+			}
+		}
+		
+	}
+}

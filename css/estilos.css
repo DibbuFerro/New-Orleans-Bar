@@ -1,4 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;500&display=swap");
+.gridbox {
+  border-radius: 0.25px;
+  border: solid 1px rgba(0, 0, 0, 0.125);
+}
+
+.gridbox__title h3 {
+  border-bottom: solid black 0.5px;
+}
+
+.gridbox__body--title h5 {
+  padding-bottom: 10px;
+  border-bottom: solid black 0.25px;
+}
+
+@media screen and (min-width: 992px) {
+  .gridbox {
+    display: grid;
+    grid-template-areas: "title title title" "img img body";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 7fr;
+  }
+  .gridbox__title {
+    grid-area: title;
+    position: relative;
+  }
+  .gridbox__img {
+    grid-area: img;
+    position: relative;
+  }
+  .gridbox__body {
+    grid-area: body;
+    position: relative;
+  }
+  .gridbox__body--title {
+    position: relative;
+  }
+  .gridbox__body--text {
+    position: relative;
+  }
+  .gridbox__body__btn {
+    position: relative;
+  }
+}
+
 body {
   font-family: 'Prompt', sans-serif;
   font-weight: 300;
