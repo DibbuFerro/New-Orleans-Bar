@@ -1,5 +1,6 @@
 @import "fuentes";
 @import "recitales";
+@import "galeria";
 
 body{
 	font-family: 'Prompt', sans-serif;
@@ -15,4 +16,35 @@ body{
 }
 #navegacion{
 	font-weight: 500;
+}
+
+@mixin parrafos ($padding) {
+	font-weight: 500;
+	max-width: 80%;
+	font-size: 1.5vh;
+	padding-left: $padding;
+}
+
+#home{
+	@media screen and (min-width: 992px){
+		p{
+			@include parrafos(48px);
+		}
+	}
+}
+#trabajo{
+	@media screen and (min-width: 992px){
+		p{
+			@include parrafos(137px);
+
+			
+		}
+	}
+}
+#quienesSomos{
+	@media screen and (min-width: 992px){
+		p{
+			@include parrafos(221px);
+		}
+	}
 }

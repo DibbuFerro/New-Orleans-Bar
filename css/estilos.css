@@ -43,6 +43,20 @@
   }
 }
 
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 20px;
+}
+
+#galeria img {
+  width: 100%;
+  height: auto;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
 body {
   font-family: 'Prompt', sans-serif;
   font-weight: 300;
@@ -59,4 +73,31 @@ body {
 
 #navegacion {
   font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  #home p {
+    font-weight: 500;
+    max-width: 80%;
+    font-size: 1.5vh;
+    padding-left: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #trabajo p {
+    font-weight: 500;
+    max-width: 80%;
+    font-size: 1.5vh;
+    padding-left: 137px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #quienesSomos p {
+    font-weight: 500;
+    max-width: 80%;
+    font-size: 1.5vh;
+    padding-left: 221px;
+  }
 }
