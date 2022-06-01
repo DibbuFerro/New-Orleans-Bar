@@ -1,0 +1,8 @@
+Commit- "Sass II, SEO y modificaciones en imagenes":
+-Agregue etiquetas semanticas y descripciones de cada pagina del sitio. 
+-Agregue en "estilos.scss" los import requeridos.
+-Implemente un MAP llamado "_variables.scss" donde se puede obtener una escalas de grises proporcionada por Bootstrap.
+-Agregue en "estilos.scss" el map en bucle, aunque no esta atada a ningun elemento del html. 
+-Agregue mixin y extend en diferentes partes del proyecto. 
+-Removi completamente el carrusel del "galeria.html", y cree un sistema mas acorde a la funcion de la pagina.
+-Realice el mismo cambio en las imagenes del "index.html".
