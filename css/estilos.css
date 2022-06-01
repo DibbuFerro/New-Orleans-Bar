@@ -43,17 +43,17 @@
   }
 }
 
-#galeria .col-lg-4 {
+#galeria .col-lg-4, #content__img .col-lg-4 {
   margin: 0 !important;
   padding: 20px;
 }
 
-#galeria img {
+#galeria img, #content__img img {
   width: 100%;
   height: auto;
 }
 
-#galeria img:hover {
+#galeria img:hover, #content__img img:hover {
   border: 5px solid #f7f7f7;
 }
 
@@ -100,4 +100,29 @@ body {
     font-size: 1.5vh;
     padding-left: 221px;
   }
+}
+
+/*Utilizar map, no aplicable en el proyecto.*/
+.color-gris-100 {
+  background-color: #f8f9fa;
+}
+
+.color-gris-200 {
+  background-color: #e9ecef;
+}
+
+.color-gris-300 {
+  background-color: #dee2e6;
+}
+
+.color-gris-400 {
+  background-color: #ced4da;
+}
+
+.color-gris-500 {
+  background-color: #adb5bd;
+}
+
+#content__img img:hover {
+  border: 5px solid #212529;
 }

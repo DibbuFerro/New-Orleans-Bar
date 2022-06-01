@@ -1,6 +1,7 @@
 @import "fuentes";
 @import "recitales";
 @import "galeria";
+@import "variables";
 
 body{
 	font-family: 'Prompt', sans-serif;
@@ -45,6 +46,27 @@ body{
 	@media screen and (min-width: 992px){
 		p{
 			@include parrafos(221px);
+		} 
+	}
+}
+
+/*Utilizar map, no aplicable en el proyecto.*/
+
+.escalaColores{
+	 
+}
+@each $color, $gris in $grises{
+	.color-#{$color}{
+		background-color: $gris;
+	}
+}
+
+#content__img{
+	@extend #galeria;
+	 img{
+	 	&:hover{
+	 	border: 5px solid #212529;
 		}
 	}
+
 }
