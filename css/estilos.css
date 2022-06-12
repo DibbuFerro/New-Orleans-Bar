@@ -43,6 +43,10 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 #galeria .col-lg-4, #content__img .col-lg-4 {
   margin: 0 !important;
   padding: 20px;
@@ -79,7 +83,7 @@ body {
   #home p {
     font-weight: 500;
     max-width: 80%;
-    font-size: 1.5vh;
+    font-size: 0.9rem;
     padding-left: 48px;
   }
 }
@@ -88,7 +92,7 @@ body {
   #trabajo p {
     font-weight: 500;
     max-width: 80%;
-    font-size: 1.5vh;
+    font-size: 0.9rem;
     padding-left: 137px;
   }
 }
@@ -97,30 +101,9 @@ body {
   #quienesSomos p {
     font-weight: 500;
     max-width: 80%;
-    font-size: 1.5vh;
+    font-size: 0.9rem;
     padding-left: 221px;
   }
-}
-
-/*Utilizar map, no aplicable en el proyecto.*/
-.color-gris-100 {
-  background-color: #f8f9fa;
-}
-
-.color-gris-200 {
-  background-color: #e9ecef;
-}
-
-.color-gris-300 {
-  background-color: #dee2e6;
-}
-
-.color-gris-400 {
-  background-color: #ced4da;
-}
-
-.color-gris-500 {
-  background-color: #adb5bd;
 }
 
 #content__img img:hover {

@@ -1,7 +1,6 @@
 @import "fuentes";
 @import "recitales";
 @import "galeria";
-@import "variables";
 
 body{
 	font-family: 'Prompt', sans-serif;
@@ -22,7 +21,7 @@ body{
 @mixin parrafos ($padding) {
 	font-weight: 500;
 	max-width: 80%;
-	font-size: 1.5vh;
+	font-size: 0.9rem;
 	padding-left: $padding;
 }
 
@@ -48,19 +47,7 @@ body{
 			@include parrafos(221px);
 		} 
 	}
-}
-
-/*Utilizar map, no aplicable en el proyecto.*/
-
-.escalaColores{
-	 
-}
-@each $color, $gris in $grises{
-	.color-#{$color}{
-		background-color: $gris;
-	}
-}
-
+} 
 #content__img{
 	@extend #galeria;
 	 img{
